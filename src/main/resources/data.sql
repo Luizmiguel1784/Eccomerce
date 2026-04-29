@@ -1,0 +1,10 @@
+insert into usuario (nome, email, senha, telefone) values ('Ferdinande Chazotte', 'fchazotte0@geocities.jp', 'wO3{|!Z8z%Dbd3', '8618798911');
+insert into usuario (nome, email, senha, telefone) values ('Claribel Davage', 'cdavage1@elpais.com', 'vC4"&Js>?q~s', '1152332407');
+insert into usuario (nome, email, senha, telefone) values ('Jennifer O''Donohue', 'jodonohue2@drupal.org', 'zD8*m?FX*NY', '2937872143');
+insert into usuario (nome, email, senha, telefone) values ('Isabelita Kingdon', 'ikingdon3@zdnet.com', 'qB9?0$b\1YJjt', '9249055065');
+insert into usuario (nome, email, senha, telefone) values ('Northrop Howson', 'nhowson4@examiner.com', 'lB2#)mFai{Ule', '4999700208');
+insert into usuario (nome, email, senha, telefone) values ('Kristopher Mannin', 'kmannin5@geocities.com', 'jF5?h_kZ{X.=p', '1646207508');
+insert into usuario (nome, email, senha, telefone) values ('Britney Cody', 'bcody6@geocities.jp', 'pD9?r1+N''P', '6194316637');
+insert into usuario (nome, email, senha, telefone) values ('Winifield Dalyell', 'wdalyell7@prlog.org', 'oX2%_lVgHnME_1', '7394939794');
+insert into usuario (nome, email, senha, telefone) values ('Alice Ebbitt', 'aebbitt8@skyrock.com', 'mN9&2jViM!', '8766518867');
+insert into usuario (nome, email, senha, telefone) values ('Leola Matley', 'lmatley9@japanpost.jp', 'jV0&?UzdE&Zaci', '7936717922');
