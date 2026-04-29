@@ -30,4 +30,7 @@ public class Pedido {
 
     @OneToMany(mappedBy = "id.pedido")
     private List<ItemDoPedido> itens;
+
+    public void getCliente(Usuario usuario) {
+    }
 }
