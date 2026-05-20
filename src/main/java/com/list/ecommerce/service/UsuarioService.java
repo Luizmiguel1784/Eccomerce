@@ -11,6 +11,8 @@ import org.springframework.stereotype.Service;
 import java.util.List;
 import java.util.Optional;
 
+import static org.aspectj.weaver.tools.cache.SimpleCacheFactory.path;
+
 @Service
 public class UsuarioService {
 
@@ -37,6 +39,7 @@ public class UsuarioService {
         usuario.setTelefone(usuarioRequest.getTelefone());
         usuario.setSenha(passwordEncoder.encode(usuarioRequest.getSenha()));
         usuario.setRoles(usuarioRequest.getRoles());
+        usuario.setPhoto(path);
         usuarioRepository.save(usuario);
 
         UsuarioResponse usuarioResponse = new UsuarioResponse(
@@ -44,7 +47,8 @@ public class UsuarioService {
                 usuario.getTelefone(),
                 usuario.getNome(),
                 usuario.getEmail(),
-                usuario.getPedidos()
+                usuario.getPedidos(),
+                usuario.getPhoto()
         );
         return usuarioResponse;
 
@@ -58,7 +62,8 @@ public class UsuarioService {
                 usuario.getNome(),
                 usuario.getEmail(),
                 usuario.getTelefone(),
-                usuario.getPedidos()
+                usuario.getPedidos(),
+                usuario.getPhoto()
         )).toList();
     }
 
@@ -70,7 +75,8 @@ public class UsuarioService {
                 usuario.getNome(),
                 usuario.getEmail(),
                 usuario.getTelefone(),
-                usuario.getPedidos()
+                usuario.getPedidos(),
+                usuario.getPhoto()
         );
     }
 
@@ -92,7 +98,8 @@ public class UsuarioService {
                 usuario.getNome(),
                 usuario.getTelefone(),
                 usuario.getEmail(),
-                usuario.getPedidos()
+                usuario.getPedidos(),
+                usuario.getPhoto()
         );
           return usuarioResponse;
     }

@@ -2,6 +2,7 @@ package com.list.ecommerce.controller;
 
 import com.list.ecommerce.DTOs.UsuarioRequest;
 import com.list.ecommerce.DTOs.UsuarioResponse;
+import com.list.ecommerce.service.PhotoService;
 import com.list.ecommerce.service.UsuarioService;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.*;
@@ -13,12 +14,15 @@ import java.util.List;
 public class UsuarioController {
 
     private final UsuarioService usuarioService;
+    private final PhotoService photoService;
 
-    public UsuarioController( UsuarioService usuarioService) {
+
+    public UsuarioController(UsuarioService usuarioService, PhotoService photoService) {
         this.usuarioService = usuarioService;
+        this.photoService = photoService;
     }
     @PostMapping("/criar")
-    public UsuarioResponse criarUsuario(@RequestBody UsuarioRequest usuarioRequest){
+    public UsuarioResponse criarUsuario(@RequestBody UsuarioRequest usuarioRequest ){
 
         return usuarioService.criarUsuario(usuarioRequest);
     }

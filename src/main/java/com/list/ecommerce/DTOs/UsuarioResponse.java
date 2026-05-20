@@ -18,4 +18,5 @@ public class UsuarioResponse {
     private String email;
     private String telefone;
     private List Pedidos;
+    private String photo;
 }
